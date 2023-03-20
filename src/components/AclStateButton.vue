@@ -21,11 +21,15 @@
   -->
 <template>
 	<div v-if="readOnly">
-		<NcButton v-if="!isAllowed" v-tooltip="t('groupfolders', 'Denied')">
-			<Cancel :size="16" />
+		<NcButton v-if="!isAllowed" v-tooltip="t('groupfolders', 'Denied')" :title="t('groupfolders', 'Denied')" :aria-label="t('groupfolders', 'Access denied')">
+			<template #icon>
+				<Cancel :size="16" />
+			</template>
 		</NcButton>
-		<NcButton v-else v-tooltip="t('groupfolders', 'Allowed')">
-			<Check :size="16" />
+		<NcButton v-else v-tooltip="t('groupfolders', 'Allowed')" :title="t('groupfolders', 'Allowed')" :aria-label="t('groupfolders', 'Access allowed')">
+			<template #icon>
+				<Check :size="16" />
+			</template>
 		</NcButton>
 	</div>
 	<div v-else>

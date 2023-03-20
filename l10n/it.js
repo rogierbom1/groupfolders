@@ -5,6 +5,7 @@ OC.L10N.register(
     "Admin configured folders shared with everyone in a group" : "Cartelle configurate dagli amministratori condivise con chiunque in un gruppo",
     "Admin configured folders shared with everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: Encrypting the contents of group folders is currently not supported." : "Cartelle configurate dall'amministratore condivise con chiunque in un gruppo.\n\nLe cartelle possono essere configurate da \"Cartelle di gruppo\" nelle impostazioni di amministrazione.\nDopo aver creato una cartella, l'amministratore può accordare l'accesso alla cartella a uno o più gruppi, controllare i permessi di scrittura/condivisione e assegnare una quota per la cartella.\n\nNota: la cifratura dei contenuti delle cartelle di gruppo non è attualmente supportata.",
     "Denied" : "Negato",
+    "Access denied" : "Accesso negato",
     "Allowed" : "Consentito",
     "Inherit permission" : "Eredita permesso",
     "Deny" : "Nega",
@@ -25,9 +26,13 @@ OC.L10N.register(
     "Add group" : "Aggiungi gruppo",
     "Are you sure you want to delete \"{folderName}\" and all files inside? This operation cannot be undone" : "Vuoi veramente eliminare \"{folderName}\" e i file in essa contenuti? Questa operazione non può essere annullata",
     "Delete \"{folderName}\"?" : "Vuoi eliminare \"{folderName}\"?",
+    "Group folder admin delegation" : "Delega amministratore cartella di gruppo",
+    "They will have access to all Groupfolders." : "Avranno accesso a tutte le cartelle di gruppo.",
+    "They will only have access to group folders for which they have advanced permissions." : "Avranno accesso solo alle cartelle di gruppo per le quali dispongono di autorizzazioni avanzate.",
     "Folder name" : "Nome della cartella",
     "Groups" : "Gruppi",
     "Quota" : "Quota",
-    "Advanced Permissions" : "Autorizzazioni avanzate"
+    "Advanced Permissions" : "Autorizzazioni avanzate",
+    "They will only have access to Groupfolders for which they have advanced permissions." : "Avranno accesso solo alle Cartelle di Gruppo per le quali dispongono di autorizzazioni avanzate."
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
