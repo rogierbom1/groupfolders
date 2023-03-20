@@ -46,7 +46,12 @@ class Scan extends FolderCommand {
 				null,
 				InputOption::VALUE_NONE,
 				'Scan all the group folders.'
-			);
+			)->addOption(
+                'path',
+                'p',
+                InputArgument::OPTIONAL,
+                'Limit scan to this path, eg. --path="/images/2022"'
+            );
 		parent::configure();
 	}
 
@@ -110,7 +115,11 @@ class Scan extends FolderCommand {
 			$start = microtime(true);
 
 			$scanner->setUseTransactions(false);
-			$scanner->scan('');
+            $path = '';
+            if (!empty($input->get("path"))) {
+                $path = str_replace('..', '', $input->get("path"));
+            }
+			$scanner->scan($path);
 
 			$end = microtime(true);
 			$statsRow[3] = date('H:i:s', (int)($end - $start));
